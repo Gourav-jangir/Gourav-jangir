@@ -1,7 +1,8 @@
-Place the three short sound effects in this directory with these filenames:
+Optional sound effects can be placed in this directory:
 
-- `move.mp3` — menu and project navigation
-- `select.mp3` — menu selections and project disk activation
-- `open.mp3` — opening and closing project readouts
+- `move.mp3` — hotbar navigation
+- `select.mp3` — selecting a panel
+- `open.mp3` — opening or closing a project readout
+- `block-break.mp3` — breaking a project block
 
-Audio is optional; missing clips are ignored without blocking navigation.
+Missing clips use short synthesized Web Audio sounds, so audio files are not required.
