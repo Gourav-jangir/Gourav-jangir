@@ -1,6 +1,6 @@
-# Gourav Jangir — 2D Portfolio World
+﻿# Gourav Jangir — 3D Artist Portfolio
 
-A single-page React, TypeScript, Vite, and Tailwind portfolio styled as a 2D pixel-art game. The world, character, clouds, and interface are drawn with SVG and CSS; no 3D renderer or model files are used.
+A responsive portfolio for 3D modeling, environment art, props, and game concepts. The site is served from the root `index.html`; the page uses custom CSS and inline SVG illustrations, with Vite handling the contact form module.
 
 ## Run locally
 
@@ -9,14 +9,12 @@ npm install
 npm run dev
 ```
 
-Use hotbar slots **1–5** or click a slot to switch between Stats, Projects, About, Contact, and Resume. Left and right arrows cycle through the slots. Select a project block or project item to jump to its details. Press Escape to close the project window or return to Stats.
+## Contact form
 
-The app fits the viewport. Panels scroll internally when their contents need more room, and the hotbar remains touch-friendly on narrow screens.
+The contact form sends messages through EmailJS. Copy `.env.example` to `.env.local` and set `VITE_EMAILJS_SERVICE_ID`, `VITE_EMAILJS_TEMPLATE_ID`, and `VITE_EMAILJS_PUBLIC_KEY`. The template receives `from_email`, `reply_to`, and `message`.
 
 ## Customize
 
-- Update project content in `src/data/projects.ts` and profile/skill copy in `src/App.tsx`.
-- Small 16×16 block maps in `public/imgs/blocks/` are used as pixel-art decoration for the floor and project blocks.
-- The world and outlined player character are implemented in `src/components/PixelWorld.tsx` and `src/components/PlayerCharacter.tsx` using HTML, CSS, and SVG.
-- Copy `.env.example` to `.env.local` and set the EmailJS service ID, template ID, and public key. The template receives `from_email`, `reply_to`, and `message`.
-- Optional sound files go in `public/sounds/`: `move.mp3`, `select.mp3`, `open.mp3`, and `block-break.mp3`. When a clip is unavailable, the app synthesizes a short sound in Web Audio.
+- Update your introduction, project descriptions, and page content in `index.html`.
+- Update contact form behavior in `src/contact.ts`.
+- The project illustrations are inline SVGs in `index.html` and can be replaced with rendered project images when available.
