@@ -1,5 +1,5 @@
 {
-  "name": "gourav-portfolio-terminal",
+  "name": "gourav-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,19 +13,9 @@
     "typecheck": "tsc -b --pretty false"
   },
   "dependencies": {
-    "@emailjs/browser": "^5.0.3",
-    "framer-motion": "^14.14.0",
-    "howler": "^2.2.4",
-    "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "@emailjs/browser": "^5.0.3"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.3.5",
-    "@types/howler": "^2.2.13",
-    "@types/react": "^19.3.0",
-    "@types/react-dom": "^19.3.0",
-    "@vitejs/plugin-react": "^6.3.0",
-    "tailwindcss": "^4.3.5",
     "typescript": "^7.0.2",
     "vite": "^8.3.8"
   }

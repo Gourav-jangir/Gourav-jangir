@@ -9,6 +9,8 @@ npm install
 npm run dev
 ```
 
+Create a production build with `npm run build` and serve it with `npm run preview`.
+
 ## Contact form
 
 The contact form sends messages through EmailJS. Copy `.env.example` to `.env.local` and set `VITE_EMAILJS_SERVICE_ID`, `VITE_EMAILJS_TEMPLATE_ID`, and `VITE_EMAILJS_PUBLIC_KEY`. The template receives `from_email`, `reply_to`, and `message`.
